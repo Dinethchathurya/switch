@@ -1,0 +1,85 @@
+        #hero {
+            background: linear-gradient(135deg, #9747FF, #762383);            position: relative;
+            overflow: hidden;
+        }
+
+        svg {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        #ellipse {
+            width: 100%;
+            height: 150px;
+        }
+
+        .buttonp {
+            text-align: left;
+            font-size: small;
+        }
+
+.para{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+  
+}
+#hero{
+    padding-top: 100px;
+}
+.heropara{
+    font-family:'Outfit',sans-serif ;
+    font-size: 16px;
+    color: #ffffff;
+}
+#header {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.navbutton{
+  
+    box-shadow: 0px 0px 10px 0px rgba(235, 170, 50, 1);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    border: 2px solid linear-gradient(135deg, #EBAA32, #9747FF);
+    background-color: #EBAA32;
+
+}
+
+
+.border-link {
+    border: 2px solid #D0C9F6;
+    /* Change to desired border width and color */
+    padding: 5px;
+    /* Optional: Add padding if needed */
+    border-radius: 50px;
+    /* Optional: Add border radius for rounded corners */
+    display: inline-block;
+    /* Ensure the border wraps the content properly */
+    
+}
+.nav-link{
+    color:#FFFF;
+    font-family: 'Outfit', sans-serif;
+
+}
+.headerbotton{
+    display: flex;
+}
+.btn {
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    width: auto;
+    /* Ensure width can adjust to content */
+}
+.image-container {
+box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.1),
+        0 0 20px rgba(255, 255, 255, 0.5);
+            background-color: rgba(255, 255, 255, 0.1);
+                /* Semi-transparent white background */
+          
+}

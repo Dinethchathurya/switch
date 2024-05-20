@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Drawing with Fabric.js</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .hero {
+            position: relative;
+            width: 100%;
+            height: calc(100% - 200px);
+            /* Adjust the height of your hero section */
+            background: lightblue;
+            /* Example background color */
+        }
+
+        #myCanvas {
+              box-sizing: border-box;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 200px;
+            /* Adjust to your needs */
+            background: #181520;
+
+            position: absolute;
+        width: 15000px;
+        height: 15000px;
+        left: calc(50% - 15000px/2);
+        top: 680px;
+            /* Make canvas background transparent */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <!-- Your hero section content goes here -->
+    </div>
+    <canvas id="myCanvas" width="500" height="200"></canvas> <!-- Adjust height to show only top part of ellipse -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"></script>
+    <script>
+        // Initialize Fabric.js canvas
+        const canvas = new fabric.Canvas('myCanvas', { backgroundColor: null });
+
+        // Create an ellipse and add it to the canvas
+        const ellipse = new fabric.Ellipse({
+            left: 250, // Center horizontally
+            top: 100, // Adjust to fit within canvas height
+            originX: 'center',
+            originY: 'center',
+            rx: 250, // X radius (half the canvas width for a full width ellipse)
+            ry: 200, // Y radius (adjust to show only the top part)
+            fill: 'red'
+        });
+
+        canvas.add(ellipse);
+    </script>
+</body>
+
+</html>
